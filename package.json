@@ -15,6 +15,7 @@
   "author": "Bill DePhillips",
   "license": "MIT",
   "dependencies": {
+    "lodash": "^3.10.0",
     "yeoman-generator": "^0.20.2"
   }
 }

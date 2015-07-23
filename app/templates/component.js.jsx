@@ -5,12 +5,22 @@ import GrComponentFactory from "./gr_component_factory";
 */
 export default GrComponentFactory.createClass({
   propTypes: {
-    foo: React.PropTypes.string.isRequired // foo is used for _______
+    label: React.PropTypes.string.isRequired // label is used for _______
+  },
+
+  clickHandler: function() {
+    this.setState({ label: "CLICKED" });
+  },
+
+  getInitialState: function() {
+   return {
+      label: this.props.label
+   };
   },
 
   render: function() {
-    return <div>
-             {this.props.foo}
+    return <div className="<%= varName %>" onClick={this.clickHandler}>
+             {this.state.label}
            </div>;
   }
 });

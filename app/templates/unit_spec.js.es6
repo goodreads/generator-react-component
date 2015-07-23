@@ -5,9 +5,9 @@ describe("<%= name %>", () => {
 
   let $ = null;
 
-  context("when foo is XYZ", () => {
+  context("when label is XYZ", () => {
     beforeEach(() => {
-      $ = SpecHelper.renderToCheerio(<%= name %>, { foo: "XYZ" });
+      $ = SpecHelper.renderToCheerio(<%= name %>, { label: "XYZ" });
     });
 
     it("renders XYZ", () => {

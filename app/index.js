@@ -9,7 +9,7 @@ module.exports = generators.NamedBase.extend({
       this.log("Generating " + this.name + " component");
       this.fs.copyTpl(
         this.templatePath('component.js.jsx'),
-        this.destinationPath('app/assets/javascripts/react_components/' + filenameBase + ".js.jsx"),
+        this.destinationPath('app/gulp/javascripts/react_components/' + filenameBase + ".js.jsx"),
         {
           name: this.name,
           varName: varName
@@ -24,8 +24,8 @@ module.exports = generators.NamedBase.extend({
          }
       );
       this.fs.copyTpl(
-        this.templatePath('integration_spec.js.es6'),
-        this.destinationPath('test/javascripts/integration/react_components/' + filenameBase + "_spec.js.es6"),
+        this.templatePath('interaction_spec.js.es6'),
+        this.destinationPath('test/javascripts/interaction/react_components/' + filenameBase + "_spec.js.es6"),
         {
           name: this.name,
           componentFilenameBase: filenameBase,

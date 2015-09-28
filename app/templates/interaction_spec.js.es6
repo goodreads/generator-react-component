@@ -1,4 +1,4 @@
-import SpecHelper from "../integration_spec_helper";
+import SpecHelper from "../interaction_spec_helper";
 import <%= name %> from "../../../src/react_components/<%= componentFilenameBase %>";
 
 describe("<%= name %>", () => {

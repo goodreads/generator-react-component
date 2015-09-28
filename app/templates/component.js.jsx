@@ -13,9 +13,9 @@ export default GrComponentFactory.createClass({
   },
 
   getInitialState: function() {
-   return {
+    return {
       label: this.props.label
-   };
+    };
   },
 
   render: function() {

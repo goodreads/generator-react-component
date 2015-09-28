@@ -11,7 +11,7 @@ describe("<%= name %>", () => {
     });
 
     it("renders XYZ", () => {
-      $('div').text().should.eql("XYZ");
+      $("div").text().should.eql("XYZ");
     });
 
   });

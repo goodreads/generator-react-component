@@ -3,7 +3,7 @@ import <%= name %> from "../../../src/react_components/<%= componentFilenameBase
 
 describe("<%= name %>", () => {
 
-  let $ = null;
+  let $;
 
   context("when label is XYZ", () => {
     beforeEach(() => {

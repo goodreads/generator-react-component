@@ -3,8 +3,8 @@ import <%= name %> from "../../../src/react_components/<%= componentFilenameBase
 
 describe("<%= name %>", () => {
 
-  let <%= varName %> = null;
-  let domNode = null;
+  let <%= varName %>;
+  let domNode;
 
   beforeEach(function() {
     <%= varName %> = SpecHelper.renderIntoDocument(<%= name %>, { label: "abc" });

@@ -13,7 +13,7 @@ describe("<%= name %>", () => {
 
   it("when clicked changes its message to CLICKED", (done) => {
     ReactTestUtils.Simulate.click(domNode);
-    setTimeout(() => {
+    _.delay(() => {
       domNode.textContent.should.eql("CLICKED");
       done();
     });

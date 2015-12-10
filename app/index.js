@@ -12,7 +12,8 @@ module.exports = generators.NamedBase.extend({
         this.destinationPath('app/gulp/javascripts/react_components/' + filenameBase + ".js.jsx"),
         {
           name: this.name,
-          varName: varName
+          varName: varName,
+          filename: filenameBase
         }
       );
       this.fs.copyTpl(

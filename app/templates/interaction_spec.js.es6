@@ -6,7 +6,7 @@ describe("<%= name %>", () => {
   let <%= varName %>;
   let domNode;
 
-  beforeEach(function() {
+  beforeEach(() => {
     <%= varName %> = SpecHelper.renderIntoDocument(<%= name %>, { label: "abc" });
     domNode = React.findDOMNode(<%= varName %>);
   });

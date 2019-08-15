@@ -1,3 +1,5 @@
+This is deprecated as of 2019-08-15
+
 Yeoman React Component Generator
 ================================
 
